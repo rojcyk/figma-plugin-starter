@@ -28,7 +28,7 @@ export default class App extends React.Component<{}, {}> {
       <Main>
         <GlobalStyles />
 
-        Tmp
+        Hello world
 
       </Main>
     )
