@@ -1,11 +1,11 @@
-import * as React from 'react'
-import styled from 'styled-components'
+import * as React from "react"
+import styled from "styled-components"
 
 // ******************** //
 // LOCAL INCLUDES
 // ******************** //
 
-import { GlobalStyles } from './globalStyles'
+import { GlobalStyles } from "./globalStyles"
 
 // ******************** //
 // TOP LVL STYLING
@@ -34,9 +34,7 @@ export default class App extends React.Component<{}, {}> {
     return (
       <Main>
         <GlobalStyles />
-
         Hello world
-
       </Main>
     )
   }

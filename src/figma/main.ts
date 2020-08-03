@@ -1,7 +1,7 @@
-import io from 'figmaio/code'
+import io from "figmaio/code"
 
-import { APP_START } from '../constants/events'
-import { WINDOW_HEIGHT, WINDOW_WIDTH } from '../constants/ui'
+import { APP_START } from "../constants/events"
+import { WINDOW_HEIGHT, WINDOW_WIDTH } from "../constants/ui"
 
 const main = async () => {
   figma.showUI(__html__, {
@@ -9,7 +9,7 @@ const main = async () => {
     height: WINDOW_HEIGHT
   })
 
-  /* When launching the plugin, figma sets a command 
+  /* When launching the plugin, figma sets a command
    * if it standard launch, the command is empty
    * if it is launched from the edit button, it says "edit"
    */
@@ -18,7 +18,7 @@ const main = async () => {
     default:
       /* Finally, sending the actual data over to the client */
       io.send(APP_START, {
-          cool: true
+        cool: true
       })
       break
   }
