@@ -205,3 +205,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,linux,osx,macos,node,react
+.vscode/settings.json
