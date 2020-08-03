@@ -21,7 +21,7 @@
     "@types/styled-components": "^5.1.1",
     "dotenv": "^8.2.0",
     "figmaio": "^0.2.5",
-    "html-webpack-plugin": "ˆ4.3.0",
+    "html-webpack-plugin": "^4.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "styled-components": "^5.1.1",
