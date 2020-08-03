@@ -1,11 +1,12 @@
 import io from 'figmaio/code'
 
 import { APP_START } from '../constants/events'
+import { WINDOW_HEIGHT, WINDOW_WIDTH } from '../constants/ui'
 
 const main = async () => {
   figma.showUI(__html__, {
-    width: 360,
-    height: 500
+    width: WINDOW_WIDTH,
+    height: WINDOW_HEIGHT
   })
 
   /* When launching the plugin, figma sets a command 
