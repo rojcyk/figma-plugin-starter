@@ -14,7 +14,7 @@ const Main = styled.main`
 `
 
 export default class App extends React.Component<{}, {}> {
-  public constructor(props: {}) {
+  public constructor(props: any) {
     super(props)
   }
 
