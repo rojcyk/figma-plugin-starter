@@ -1,6 +1,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/windows,linux,osx,macos,node,react
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,linux,osx,macos,node,react
 
+### Figma ###
+
+manifest.json
+
 ### Linux ###
 *~
 
