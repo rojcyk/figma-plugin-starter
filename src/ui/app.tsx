@@ -1,10 +1,14 @@
 import * as React from 'react'
 import styled from 'styled-components'
 
+// ******************** //
+// LOCAL INCLUDES
+// ******************** //
+
 import { GlobalStyles } from './globalStyles'
 
 // ******************** //
-// APP MAIN CLASS
+// TOP LVL STYLING
 // ******************** //
 
 const Main = styled.main`
@@ -13,11 +17,14 @@ const Main = styled.main`
   height: 100%;
 `
 
+// ******************** //
+// MAIN APP CLASS
+// ******************** //
+
 export default class App extends React.Component<{}, {}> {
   public constructor(props: any) {
     super(props)
   }
-
 
   // ************************************************ //
   // Main render method
