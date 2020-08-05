@@ -1,6 +1,6 @@
-# figma-plugin-starter
+# Figma plugin starter
 
-Figma plugins can be very simple, or as complex you want them to be. This Figma plugin boilerplate is opiniated and is optimized for a feature rich and larger plugins. It is heavily inspired from [viewports-client](https://github.com/rojcyk/viewports-client).
+Figma plugins can be very simple, or as complex you want them to be. This Figma plugin boilerplate is opinionated and is optimized for a feature rich and larger plugins. It is heavily inspired from [viewports-client](https://github.com/rojcyk/viewports-client).
 
 ### Dependencies
 
