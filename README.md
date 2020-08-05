@@ -1,11 +1,5 @@
 <p align="center">
   <img src="./cover.png">
-  <br>
-  <br>
-  <br>
-    <a href="https://david-dm.org/rojcyk/figma-plugin-starter">
-       <img src="https://david-dm.org/rojcyk/figma-plugin-starter">
-    </a>
 </p>
 
 Figma plugins can be very simple, or as complex you want them to be. This Figma plugin boilerplate is opinionated and is optimized for a feature rich and larger plugins. It is heavily inspired from [viewports-client](https://github.com/rojcyk/viewports-client).
