@@ -2,8 +2,8 @@ import * as React from "react"
 import * as ReactDOM from "react-dom"
 import io from "figmaio/ui"
 
-import { APP_START } from "../constants/events"
-import App from "./app"
+import { APP_START } from "@constants/events"
+import App from "@components/app"
 
 // ******************** //
 // Figma hacks

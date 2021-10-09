@@ -8,7 +8,12 @@
       "dist"
     ],
     "compilerOptions": {
+      "baseUrl": ".",
       "lib": [ "es2015", "dom"],
+      "paths": {
+        "@constants/*": ["constants/*"],
+        "@components/*": ["ui/components/*"]
+      },
       "typeRoots": [
         "./node_modules/@types",
         "./node_modules/@figma"

@@ -17,14 +17,18 @@ module.exports = (e, argv) => {
     devtool: argv.mode === "production" ? false : "inline-source-map",
 
     entry: {
-      app: "./src/app/index.tsx", // The entry point for your UI code
-      figma: "./src/figma/main.ts" // The entry point for your plugin code
+      app: "./ui/ui.tsx", // The entry point for your UI code
+      figma: "./plugin/main.ts" // The entry point for your plugin code
     },
 
     module: {
       rules: [
         // Converts TypeScript code to JavaScript
-        { test: /\.tsx?$/, use: "ts-loader", exclude: /node_modules/ },
+        {
+          test: /\.tsx?$/,
+          loader: "ts-loader",
+          exclude: /node_modules/
+        },
         // { test: /\.jsx?$/, use: 'babel-loader', exclude: /node_modules/ },
 
         // Enables including CSS by doing "import './file.css'" in your TypeScript code
@@ -33,14 +37,20 @@ module.exports = (e, argv) => {
         // Allows you to use "<%= require('./file.svg') %>" in your HTML code to get a data URI
         {
           test: /\.(png|jpg|gif|webp|svg)$/,
-          loader: [{ loader: "url-loader" }]
+          loader: "url-loader",
+          exclude: /node_modules/
         }
       ]
     },
 
     // Webpack tries these extensions for you if you omit the extension like "import './file'"
     resolve: {
-      extensions: [".tsx", ".ts", ".jsx", ".js"]
+      extensions: [".tsx", ".ts", ".jsx", ".js"],
+      alias: {
+        // add as many aliases as you like! 
+        '@constants': path.resolve(__dirname, 'constants'),
+        '@components': path.resolve(__dirname, 'ui/components'),
+      }
       // modules: ['/node_modules'],
     },
 
@@ -53,10 +63,10 @@ module.exports = (e, argv) => {
     plugins: [
       new webpack.DefinePlugin(envKeys), // This sets up env variables
       new HtmlWebpackPlugin({
-        template: "./src/app/index.html",
-        filename: "index.html",
+        template: "./ui/ui.html",
+        filename: "ui.html",
         inlineSource: ".(js)$",
-        chunks: ["app"]
+        chunks: ["ui"]
       }),
       new InlineChunkHtmlPlugin(HtmlWebpackPlugin, [/.*/])
     ]

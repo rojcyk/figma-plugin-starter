@@ -1,0 +1,8 @@
+{
+  "name": "figma-plugin-starter",
+  "id": "",
+  "api": "1.0.0",
+  "main": "dist/figma.js",
+  "editorType": ["figma"],
+  "ui": "dist/ui.html"
+}
